@@ -1,17 +1,14 @@
-=begin
+
 def prime?(n)
   range = (2..n/2).to_a
   if n <= 1
     return false
   elsif
-    range.any? {|i| n % i == 0}
-    return false
-  else
-    return true
+    range.none? {|i| n % i == 0}
   end
 end
-=end
 
+=begin
 def prime?(n)
 if n <= 1
    return false
@@ -20,3 +17,4 @@ if n <= 1
  else (2..n/2).none? {|x| n % x == 0}
  end
 end
+=end

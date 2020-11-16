@@ -3,7 +3,10 @@ def prime?(n)
   if n <= 1
     return false
   else
-    range.none? {|i| n % i == 0}
+    range.any? {|i| n % i == 0}
+    return false
+  else
+    return true
   end
 end
 
@@ -12,7 +15,7 @@ def prime?(n)
   range = (2..n/2).to_a
   if n <= 1
     return false
-  elsif
+  else
     range.none? {|i| n % i == 0}
   end
 end

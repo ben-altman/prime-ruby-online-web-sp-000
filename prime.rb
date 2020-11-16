@@ -5,7 +5,6 @@ def prime?(n)
     return false
   elsif
     range.none? {|i| n % i == 0}
-    return true
   end
 end
 

@@ -2,7 +2,7 @@ def prime?(n)
   range = (2..n/2).to_a
   if n <= 1
     return false
-  else
+  elsif
     range.any? {|i| n % i == 0}
     return false
   else

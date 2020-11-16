@@ -1,8 +1,12 @@
-def prime?(int)
-  range = (2..int)
-  if int <= 1
-    false
-  
+def prime?(n)
+  range = (2..n/2).to_a
+  if n <= 1
+    return false
+  elsif
+    range.any? {|i| n % i == 0}
+    return false
+  else
+    return true
   end
 end
 
